@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magalhaes Monica - KYC Onboarding / AML Junior</title>
+    <meta name="description" content="Portfolio et CV de Magalhaes Monica, spécialiste KYC Onboarding / AML Junior.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Advanced UI Background -->
+    <div id="cursor-glow"></div>
+    <div class="background-elements">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="grid-overlay"></div>
+    </div>
+
+    <nav class="navbar">
+        <div class="nav-content">
+            <a href="#" class="logo">MM</a>
+            <ul class="nav-links">
+                <li><a href="#about" data-i18n="nav_about">À propos</a></li>
+                <li><a href="#experience" data-i18n="nav_exp">Expérience</a></li>
+                <li><a href="#skills" data-i18n="nav_skills">Compétences</a></li>
+                <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
+            </ul>
+            <div class="lang-switcher">
+                <button class="lang-btn active" data-lang="fr">FR</button>
+                <button class="lang-btn" data-lang="en">EN</button>
+                <button class="lang-btn" data-lang="de">DE</button>
+                <button class="lang-btn" data-lang="lu">LU</button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section id="hero" class="hero section">
+            <div class="hero-container">
+                <div class="hero-content fade-in-left">
+                    <div class="badge" data-i18n="hero_avail">Disponible</div>
+                    <h1>Magalhaes <span>Monica</span></h1>
+                    <h2 data-i18n="hero_title">KYC Onboarding / AML Junior</h2>
+                    <p class="hero-desc" data-i18n="hero_desc">Professionnelle rigoureuse et polyvalente, experte en conformité, gestion administrative et relation client internationale.</p>
+                    <div class="hero-actions">
+                        <a href="#experience" class="btn btn-primary" data-i18n="btn_exp">Voir mon parcours</a>
+                        <a href="#contact" class="btn btn-secondary" data-i18n="btn_contact">Me contacter</a>
+                        <a href="CV%20KAYA%20KYCAML.pdf" class="btn btn-outline" target="_blank" data-i18n="btn_download" download><i class="fa-solid fa-download"></i> Télécharger CV</a>
+                    </div>
+                </div>
+                <div class="hero-image-container fade-in-right">
+                    <div class="image-wrapper tilt-card">
+                        <img src="./monica_portrait.jpg" alt="Monica Magalhaes" class="profile-img" id="profile-picture">
+                        <div class="experience-badge float-anim">
+                            <span class="number">6+</span>
+                            <span class="text" data-i18n="hero_years">Ans<br>d'expérience</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="contact-bar section fade-in-up">
+            <div class="contact-grid">
+                <div class="contact-item hover-lift">
+                    <div class="icon-box"><i class="fa-solid fa-phone"></i></div>
+                    <div class="contact-details">
+                        <span class="label" data-i18n="contact_phone">Téléphone</span>
+                        <span class="value">06 03 92 74 62</span>
+                    </div>
+                </div>
+                <div class="contact-item hover-lift">
+                    <div class="icon-box"><i class="fa-solid fa-envelope"></i></div>
+                    <div class="contact-details">
+                        <span class="label">Email</span>
+                        <span class="value">monicakaya.contact@gmail.com</span>
+                    </div>
+                </div>
+                <div class="contact-item hover-lift">
+                    <div class="icon-box"><i class="fa-solid fa-car"></i></div>
+                    <div class="contact-details">
+                        <span class="label" data-i18n="contact_license">Permis</span>
+                        <span class="value" data-i18n="contact_license_val">Permis B</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="experience section">
+            <div class="section-header fade-in-up">
+                <h2 data-i18n="exp_section_title">Expérience <span>Professionnelle</span></h2>
+                <div class="divider"></div>
+            </div>
+            
+            <div class="timeline" id="experience-timeline">
+                <div class="timeline-progress"></div>
+                
+                <div class="timeline-item fade-in-up">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card interactive-card">
+                        <div class="timeline-header">
+                            <div class="job-info">
+                                <h3 data-i18n="job1_title">Offboarding KYC Mission</h3>
+                                <h4>Alcyone Consulting / ING Luxembourg</h4>
+                            </div>
+                            <span class="date-badge" data-i18n="job1_date">Fév. 2026 - Avril 2026</span>
+                        </div>
+                        <ul class="job-description">
+                            <li data-i18n="job1_desc1">Analyse et traitement des demandes de clôture de comptes clients Business dans le respect des exigences réglementaires KYC/AML.</li>
+                            <li data-i18n="job1_desc2">Collaboration étroite avec le personnel interne pour assurer la conformité.</li>
+                            <li data-i18n="job1_desc3">Revue complète des dossiers clients (identités, statuts, FATCA, RCS).</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item fade-in-up">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card interactive-card">
+                        <div class="timeline-header">
+                            <div class="job-info">
+                                <h3 data-i18n="job2_title">Gestion Administrative & Comptable</h3>
+                                <h4>Consultors I Tècnics Associats S.L (Andorra)</h4>
+                            </div>
+                            <span class="date-badge" data-i18n="job2_date">Fév. 2023 - Oct. 2024</span>
+                        </div>
+                        <ul class="job-description">
+                            <li data-i18n="job2_desc1">Traitement et analyse de dossiers clients en conformité avec les standards KYC.</li>
+                            <li data-i18n="job2_desc2">Assurer les revues périodiques (ODD) des clients privés, recommandations d'audit.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item fade-in-up">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card interactive-card">
+                        <div class="timeline-header">
+                            <div class="job-info">
+                                <h3 data-i18n="job3_title">Front Office & Accueil</h3>
+                                <h4>Mora Banc S.A (Andorra)</h4>
+                            </div>
+                            <span class="date-badge" data-i18n="job3_date">Sept. 2021 - Jan. 2023</span>
+                        </div>
+                        <ul class="job-description">
+                            <li data-i18n="job3_desc1">Front office : Accueil et orientation des clients.</li>
+                            <li data-i18n="job3_desc2">Préparation des salles de réunion, gestion et organisation des rdv clients avec les conseillers financiers.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item fade-in-up">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card interactive-card">
+                        <div class="timeline-header">
+                            <div class="job-info">
+                                <h3 data-i18n="job4_title">Assistante Administrative</h3>
+                                <h4>Sotheby's International Realty (Andorra)</h4>
+                            </div>
+                            <span class="date-badge" data-i18n="job4_date">Nov. 2019 - Août 2021</span>
+                        </div>
+                        <ul class="job-description">
+                            <li data-i18n="job4_desc1">Vérification des données clients KYC et AML via "ACCUITY" et "NAMEBOOK".</li>
+                            <li data-i18n="job4_desc2">Constitution et gestion de dossiers acquéreurs.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="skills section">
+            <div class="section-header fade-in-up">
+                <h2 data-i18n="skills_section_title">Compétences & <span>Formation</span></h2>
+                <div class="divider"></div>
+            </div>
+
+            <div class="skills-grid">
+                <div class="skills-column fade-in-up">
+                    <div class="glass-card full-height hover-glow">
+                        <h3 data-i18n="skills_key"><i class="fa-solid fa-list-check"></i> Compétences Clés</h3>
+                        <div class="tags-container">
+                            <span class="tag" data-i18n="skill_1">Conformité KYC/AML</span>
+                            <span class="tag" data-i18n="skill_2">Travail en équipe/autonomie</span>
+                            <span class="tag" data-i18n="skill_3">Sens aigu du détail</span>
+                            <span class="tag" data-i18n="skill_4">Sens de l'analyse</span>
+                            <span class="tag">Pack-Office</span>
+                            <span class="tag" data-i18n="skill_5">Rigoureuse</span>
+                            <span class="tag" data-i18n="skill_6">Force de proposition</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-column fade-in-up" style="transition-delay: 0.2s">
+                    <div class="glass-card full-height hover-glow">
+                        <h3 data-i18n="skills_lang"><i class="fa-solid fa-language"></i> Langues</h3>
+                        <div class="languages-list">
+                            <div class="language-item"><span class="lang-name" data-i18n="lang_es">Espagnol</span><div class="progress-bar"><div class="progress" style="width: 100%"></div></div><span class="lang-level">C2</span></div>
+                            <div class="language-item"><span class="lang-name" data-i18n="lang_ca">Catalan</span><div class="progress-bar"><div class="progress" style="width: 100%"></div></div><span class="lang-level">C2</span></div>
+                            <div class="language-item"><span class="lang-name" data-i18n="lang_fr">Français</span><div class="progress-bar"><div class="progress" style="width: 100%"></div></div><span class="lang-level">C2</span></div>
+                            <div class="language-item"><span class="lang-name" data-i18n="lang_pt">Portugais</span><div class="progress-bar"><div class="progress" style="width: 100%"></div></div><span class="lang-level">C2</span></div>
+                            <div class="language-item"><span class="lang-name" data-i18n="lang_de">Allemand</span><div class="progress-bar"><div class="progress" style="width: 75%"></div></div><span class="lang-level">B2</span></div>
+                            <div class="language-item"><span class="lang-name" data-i18n="lang_en">Anglais</span><div class="progress-bar"><div class="progress" style="width: 50%"></div></div><span class="lang-level">B1</span></div>
+                            <div class="language-item"><span class="lang-name" data-i18n="lang_lu">Luxembourgeois</span><div class="progress-bar"><div class="progress" style="width: 25%"></div></div><span class="lang-level" data-i18n="lang_lu_level" style="font-size: 0.85rem">En cours</span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-column fade-in-up" style="transition-delay: 0.4s">
+                    <div class="glass-card full-height hover-glow">
+                        <h3 data-i18n="skills_edu"><i class="fa-solid fa-graduation-cap"></i> Formation</h3>
+                        <div class="education-item">
+                            <h4 data-i18n="edu_title">Bac Pro en systèmes informatiques</h4>
+                            <p class="school">Dr. Julio Martins - Portugal</p>
+                            <span class="edu-date">2013 - 2015</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 Magalhaes Monica.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
