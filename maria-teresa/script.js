@@ -37,24 +37,20 @@ const translations = {
         job4_desc1: "Supervision des opérations quotidiennes, accueil clientèle et tenue exemplaire du point de vente.",
         job4_desc2: "Coordination d'équipe, gestion des stocks et excellence du service client.",
         skills_section_title: "Compétences & <span>Formation</span>",
-        skills_key: "<i class=\"fa-solid fa-list-check\"></i> Compétences Clés",
+        skills_key: "<span class=\"material-symbols-outlined\">checklist</span> Compétences Clés",
         skill_1: "Normes d'hygiène & sécurité",
         skill_2: "Discrétion & rigueur diplomatique",
         skill_3: "Organisation & autonomie",
         skill_4: "Gestion logistique & réassort",
         skill_5: "Bureautique Office 365",
         skill_6: "Sens du service & accueil",
-        skills_lang: "<i class=\"fa-solid fa-language\"></i> Langues",
+        skills_lang: "<span class=\"material-symbols-outlined\">translate</span> Langues",
         lang_es: "Espagnol",
         lang_pt: "Portugais",
         lang_fr: "Français",
         lang_en: "Anglais",
-        lang_native: "Langue maternelle (C2)",
-        lang_fluent: "Courant (C2)",
-        lang_good: "Bonnes connaissances (B2)",
-        lang_basic: "Connaissances de base (B1)",
-        btn_download: "<i class=\"fa-solid fa-download\"></i> Télécharger Profil",
-        skills_edu: "<i class=\"fa-solid fa-graduation-cap\"></i> Formation & Certificats",
+        btn_download: "<span class=\"material-symbols-outlined\">download</span> Télécharger Profil",
+        skills_edu: "<span class=\"material-symbols-outlined\">school</span> Formation & Certificats",
         edu1_title: "Certificat Universitaire Assistante Pharmacie",
         edu1_school: "ESNECA (Espagne) · 2022",
         edu2_title: "Diplôme de Technicienne en Radiologie",
@@ -102,24 +98,20 @@ const translations = {
         job4_desc1: "Supervisión integral de operaciones, atención al cliente y estándares de tienda.",
         job4_desc2: "Liderazgo de equipo, control de inventario y excelencia comercial.",
         skills_section_title: "Habilidades & <span>Formación</span>",
-        skills_key: "<i class=\"fa-solid fa-list-check\"></i> Competencias Clave",
+        skills_key: "<span class=\"material-symbols-outlined\">checklist</span> Competencias Clave",
         skill_1: "Normas de higiene y desinfección",
         skill_2: "Discreción y protocolo diplomático",
         skill_3: "Organización y proactividad",
         skill_4: "Gestión de stock y suministros",
         skill_5: "Ofimática Microsoft 365",
         skill_6: "Orientación al servicio",
-        skills_lang: "<i class=\"fa-solid fa-language\"></i> Idiomas",
+        skills_lang: "<span class=\"material-symbols-outlined\">translate</span> Idiomas",
         lang_es: "Español",
         lang_pt: "Portugués",
         lang_fr: "Francés",
         lang_en: "Inglés",
-        lang_native: "Lengua materna (C2)",
-        lang_fluent: "Excelente nivel (C2)",
-        lang_good: "Buenas competencias (B2)",
-        lang_basic: "Conocimientos básicos (B1)",
-        btn_download: "<i class=\"fa-solid fa-download\"></i> Descargar Perfil",
-        skills_edu: "<i class=\"fa-solid fa-graduation-cap\"></i> Formación & Certificaciones",
+        btn_download: "<span class=\"material-symbols-outlined\">download</span> Descargar Perfil",
+        skills_edu: "<span class=\"material-symbols-outlined\">school</span> Formación & Certificaciones",
         edu1_title: "Certificado Univ. Asistente de Farmacia",
         edu1_school: "ESNECA (España) · 2022",
         edu2_title: "Técnico Superior en Radiología",
@@ -167,24 +159,20 @@ const translations = {
         job4_desc1: "Store operations management, customer assistance, and visual merchandising.",
         job4_desc2: "Inventory control, teamwork coordination, and service excellence.",
         skills_section_title: "Skills & <span>Education</span>",
-        skills_key: "<i class=\"fa-solid fa-list-check\"></i> Key Competencies",
+        skills_key: "<span class=\"material-symbols-outlined\">checklist</span> Key Competencies",
         skill_1: "Hygiene & safety regulations",
         skill_2: "Discretion & diplomatic protocols",
         skill_3: "Organization & self-reliance",
         skill_4: "Stock & supply replenishment",
         skill_5: "Microsoft Office 365",
         skill_6: "Customer care & service focus",
-        skills_lang: "<i class=\"fa-solid fa-language\"></i> Languages",
+        skills_lang: "<span class=\"material-symbols-outlined\">translate</span> Languages",
         lang_es: "Spanish",
         lang_pt: "Portuguese",
         lang_fr: "French",
         lang_en: "English",
-        lang_native: "Native language (C2)",
-        lang_fluent: "Fluent (C2)",
-        lang_good: "Good proficiency (B2)",
-        lang_basic: "Basic knowledge (B1)",
-        btn_download: "<i class=\"fa-solid fa-download\"></i> Download Profile",
-        skills_edu: "<i class=\"fa-solid fa-graduation-cap\"></i> Education & Credentials",
+        btn_download: "<span class=\"material-symbols-outlined\">download</span> Download Profile",
+        skills_edu: "<span class=\"material-symbols-outlined\">school</span> Education & Credentials",
         edu1_title: "Univ. Certificate Pharmacy Assistant",
         edu1_school: "ESNECA (Spain) · 2022",
         edu2_title: "Radiology Technician Diploma",
@@ -232,24 +220,20 @@ const translations = {
         job4_desc1: "Supervisão diária de operações, atendimento ao público e apresentação de loja.",
         job4_desc2: "Liderança de equipa, gestão de stocks e excelência de serviço.",
         skills_section_title: "Competências & <span>Formação</span>",
-        skills_key: "<i class=\"fa-solid fa-list-check\"></i> Competências Chave",
+        skills_key: "<span class=\"material-symbols-outlined\">checklist</span> Competências Chave",
         skill_1: "Normas de higiene e desinfeção",
         skill_2: "Discrição e protocolo institucional",
         skill_3: "Organização e autonomia",
         skill_4: "Gestão logística e reposição",
         skill_5: "Informática Microsoft 365",
         skill_6: "Orientação para o cliente",
-        skills_lang: "<i class=\"fa-solid fa-language\"></i> Línguas",
+        skills_lang: "<span class=\"material-symbols-outlined\">translate</span> Línguas",
         lang_es: "Espanhol",
         lang_pt: "Português",
         lang_fr: "Francês",
         lang_en: "Inglês",
-        lang_native: "Língua materna (C2)",
-        lang_fluent: "Excelente nível (C2)",
-        lang_good: "Boas competências (B2)",
-        lang_basic: "Conhecimentos básicos (B1)",
-        btn_download: "<i class=\"fa-solid fa-download\"></i> Descarregar Perfil",
-        skills_edu: "<i class=\"fa-solid fa-graduation-cap\"></i> Formação & Certificações",
+        btn_download: "<span class=\"material-symbols-outlined\">download</span> Descarregar Perfil",
+        skills_edu: "<span class=\"material-symbols-outlined\">school</span> Formação & Certificações",
         edu1_title: "Certificado Univ. Assistente de Farmácia",
         edu1_school: "ESNECA (Espanha) · 2022",
         edu2_title: "Diploma de Técnica em Radiologia",
@@ -262,7 +246,7 @@ const translations = {
 };
 
 document.addEventListener('DOMContentLoaded', () => {
-    // 1. Interactive Cursor Glow
+    // 1. Interactive Cursor Glow (21st.dev style)
     const glow = document.getElementById('cursor-glow');
     if (glow && window.matchMedia('(pointer: fine)').matches) {
         window.addEventListener('mousemove', (e) => {
@@ -271,14 +255,26 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // 2. Tilt Card Animation on Profile
+    // 2. 21st.dev Spotlight Effect on Interactive Cards
+    const interactiveCards = document.querySelectorAll('.interactive-card, .contact-item, .education-item');
+    interactiveCards.forEach(card => {
+        card.addEventListener('mousemove', (e) => {
+            const rect = card.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+            card.style.setProperty('--mouse-x', `${x}px`);
+            card.style.setProperty('--mouse-y', `${y}px`);
+        });
+    });
+
+    // 3. Tilt Card Animation on Profile
     const tiltCard = document.querySelector('.tilt-card');
     if (tiltCard && window.matchMedia('(pointer: fine)').matches) {
         tiltCard.addEventListener('mousemove', (e) => {
             const rect = tiltCard.getBoundingClientRect();
             const x = e.clientX - rect.left - rect.width / 2;
             const y = e.clientY - rect.top - rect.height / 2;
-            const mult = 15;
+            const mult = 14;
             const rotateX = (-y / (rect.height / 2)) * mult;
             const rotateY = (x / (rect.width / 2)) * mult;
             tiltCard.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.02)`;
@@ -289,13 +285,12 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // 3. Multi-language Switcher
+    // 4. Multi-language Switcher
     const langBtns = document.querySelectorAll('.lang-btn');
     
     function setLanguage(lang) {
         if (!translations[lang]) return;
         
-        // Update Buttons
         langBtns.forEach(btn => {
             if (btn.getAttribute('data-lang') === lang) {
                 btn.classList.add('active');
@@ -304,7 +299,6 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
 
-        // Update Text Elements
         document.querySelectorAll('[data-i18n]').forEach(el => {
             const key = el.getAttribute('data-i18n');
             if (translations[lang][key]) {
@@ -312,7 +306,6 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
 
-        // Update html lang attribute
         document.documentElement.lang = lang;
         localStorage.setItem('mt_lang', lang);
     }
@@ -324,24 +317,23 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Load saved or default to French
     const savedLang = localStorage.getItem('mt_lang') || 'fr';
     setLanguage(savedLang);
 
-    // 4. Scroll Animations Observer
+    // 5. Scroll Animations Observer
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('visible');
             }
         });
-    }, { threshold: 0.15 });
+    }, { threshold: 0.12 });
 
     document.querySelectorAll('.fade-in-up, .fade-in-left, .fade-in-right').forEach(el => {
         observer.observe(el);
     });
 
-    // 5. Timeline line progress update on scroll
+    // 6. Timeline line progress update on scroll
     const timeline = document.getElementById('experience-timeline');
     const progressBar = document.querySelector('.timeline-progress');
     if (timeline && progressBar) {
@@ -354,6 +346,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 const percent = Math.min(Math.max((visiblePart / totalHeight) * 100, 0), 100);
                 progressBar.style.height = `${percent}%`;
             }
-        });
+        }, { passive: true });
     }
 });
