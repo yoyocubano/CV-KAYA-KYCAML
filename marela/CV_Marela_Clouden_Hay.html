@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Marela Clouden Hay - Agent Polyvalent</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @page {
+            size: A4 portrait;
+            margin: 0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-print-color-adjust: exact !important;
+            print-color-adjust: exact !important;
+        }
+
+        body {
+            font-family: 'Roboto', -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+            background: #e2e8f0;
+            color: #1e293b;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 20px 0;
+        }
+
+        /* A4 Page: 210mm x 297mm */
+        .cv-page {
+            width: 210mm;
+            height: 297mm;
+            max-height: 297mm;
+            background: #ffffff;
+            padding: 32px 36px 28px;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+            overflow: hidden;
+            position: relative;
+        }
+
+        /* Top Header */
+        .cv-header {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+            margin-bottom: 24px;
+            border-bottom: 1px solid #e2e8f0;
+            padding-bottom: 20px;
+        }
+
+        .header-avatar {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            overflow: hidden;
+            flex-shrink: 0;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+        }
+
+        .header-avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center 20%;
+        }
+
+        .header-text {
+            flex-grow: 1;
+        }
+
+        .header-name {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 38px;
+            font-weight: 500;
+            color: #111827;
+            line-height: 1.15;
+            margin-bottom: 4px;
+        }
+
+        .header-role {
+            font-size: 14px;
+            font-weight: 500;
+            color: #4b5563;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            margin-bottom: 12px;
+        }
+
+        .quote-box {
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 10px 14px;
+            font-size: 11px;
+            line-height: 1.45;
+            color: #334155;
+            font-style: italic;
+        }
+
+        /* Two Columns Body */
+        .cv-body {
+            display: grid;
+            grid-template-columns: 240px 1fr;
+            gap: 28px;
+            flex-grow: 1;
+        }
+
+        /* Column Headers (Blue serif spaced) */
+        .section-heading-blue {
+            font-family: 'Playfair Display', Georgia, serif;
+            color: #0369a1;
+            font-size: 14px;
+            font-weight: 600;
+            letter-spacing: 0.16em;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        /* Left Column */
+        .left-col {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .contact-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            font-size: 11px;
+            color: #1f2937;
+        }
+
+        .contact-list li {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            word-break: break-word;
+        }
+
+        .contact-list i {
+            font-size: 13px;
+            color: #0f172a;
+            width: 14px;
+            text-align: center;
+        }
+
+        .left-text-block {
+            font-size: 11px;
+            line-height: 1.45;
+            color: #1f2937;
+        }
+
+        .left-text-block p {
+            margin-bottom: 4px;
+        }
+
+        .bullets-list {
+            list-style: none;
+            font-size: 11px;
+            line-height: 1.45;
+            color: #1f2937;
+        }
+
+        .bullets-list li {
+            position: relative;
+            padding-left: 12px;
+            margin-bottom: 4px;
+        }
+
+        .bullets-list li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #000000;
+            font-weight: bold;
+        }
+
+        /* Right Column (Experience) */
+        .right-col {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .experience-card {
+            margin-bottom: 10px;
+        }
+
+        .experience-card:last-child {
+            margin-bottom: 0;
+        }
+
+        .exp-title {
+            font-size: 13px;
+            font-weight: 700;
+            color: #000000;
+            text-transform: lowercase;
+        }
+
+        .exp-title::first-letter {
+            text-transform: uppercase;
+        }
+
+        .exp-meta {
+            font-size: 11.5px;
+            color: #0284c7;
+            font-style: italic;
+            font-weight: 500;
+            margin: 1px 0 3px;
+        }
+
+        .exp-desc {
+            font-size: 10.8px;
+            line-height: 1.4;
+            color: #374151;
+            text-align: justify;
+        }
+
+        @media print {
+            body {
+                background: none;
+                padding: 0;
+            }
+            .cv-page {
+                box-shadow: none;
+                width: 210mm;
+                height: 297mm;
+                max-height: 297mm;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="cv-page">
+        <!-- HEADER -->
+        <header class="cv-header">
+            <div class="header-avatar">
+                <img src="./portrait.jpg" alt="Marela Clouden Hay">
+            </div>
+            <div class="header-text">
+                <h1 class="header-name">Marela Clouden Hay</h1>
+                <div class="header-role">AGENT POLYVALENT</div>
+                <div class="quote-box">
+                    "Mon travail en équipe apporte un grand avantage à mon environnement professionnel grâce à mes efforts dans chaque tâche qui m'est confiée. Je contribue également à l'amélioration de mon travail et de celui de mes collègues, avec respect, tout en créant un climat agréable afin d'atteindre un environnement plus productif"
+                </div>
+            </div>
+        </header>
+
+        <!-- BODY -->
+        <div class="cv-body">
+            <!-- LEFT COLUMN -->
+            <aside class="left-col">
+                <!-- Contact -->
+                <div>
+                    <span class="section-heading-blue">CONTACT</span>
+                    <ul class="contact-list">
+                        <li><i class="fa-solid fa-phone"></i> +352 661 133 059</li>
+                        <li><i class="fa-regular fa-envelope"></i> marela.c@hotmail.com</li>
+                        <li><i class="fa-solid fa-car"></i> permis B</li>
+                        <li><i class="fa-solid fa-location-dot"></i> 6 Fleeschgaass, L-6665 Herborn</li>
+                    </ul>
+                </div>
+
+                <!-- Formation -->
+                <div>
+                    <span class="section-heading-blue">FORMATION</span>
+                    <div class="left-text-block">
+                        <p><em>Universidad Autónoma de Santo Domingo 2001-2010</em></p>
+                        <p><em>Formation en création d'événements à Saint-Domingue</em></p>
+                    </div>
+                </div>
+
+                <!-- Divers -->
+                <div>
+                    <span class="section-heading-blue">DIVERS</span>
+                    <div class="left-text-block">
+                        <p>Formation de femme de chambre, formation en cuisine, formation aux soins des adultes et des enfants, formation en accueil et animation des espaces domestiques et publics.</p>
+                    </div>
+                </div>
+
+                <!-- Competences -->
+                <div>
+                    <span class="section-heading-blue">COMPÉTENCES</span>
+                    <ul class="bullets-list">
+                        <li>Excellente organisation</li>
+                        <li>Coordination efficace</li>
+                        <li>Ponctualité et fiabilité</li>
+                        <li>Sens du service et orientation client</li>
+                        <li>Capacité à travailler en équipe</li>
+                    </ul>
+                </div>
+
+                <!-- Langue -->
+                <div>
+                    <span class="section-heading-blue">LANGUE</span>
+                    <ul class="bullets-list">
+                        <li>Espagnol – Langue maternelle</li>
+                        <li>Italien – Langue maternelle</li>
+                        <li>Français – Niveau A2 : très bonne compréhension, expression en cours d'amélioration</li>
+                    </ul>
+                </div>
+            </aside>
+
+            <!-- RIGHT COLUMN -->
+            <main class="right-col">
+                <span class="section-heading-blue">EXPÉRIENCE PROFESSIONNELLE</span>
+
+                <!-- 1. HOFFMAN -->
+                <div class="experience-card">
+                    <div class="exp-title">agent polyvalent</div>
+                    <div class="exp-meta">Jul. 2023 - en cours / HOFFMAN Luxembourg</div>
+                    <p class="exp-desc">
+                        Agent polyvalent dans une usine pâtissière : participe aux différentes tâches quotidiennes liées à la production, à l'entretien et à l'organisation de l'atelier. Contribue au bon déroulement des opérations en soutenant les équipes, en veillant au respect des normes d'hygiène et de sécurité, et en maintenant un environnement de travail propre et ordonné.
+                    </p>
+                </div>
+
+                <!-- 2. NOVO HOTEL -->
+                <div class="experience-card">
+                    <div class="exp-title">femme de chambre</div>
+                    <div class="exp-meta">may. 2022 - jul 2023 / NOVO HOTEL Kichberg</div>
+                    <p class="exp-desc">
+                        Femme de chambre au Novo Hotel, Kichberg responsable du nettoyage et de l'entretien des chambres selon les standards de l'hôtel, gestion du linge et réapprovisionnement des fournitures, tout en maintenant un environnement propre, confortable et accueillant pour les clients, dans le respect strict des procédures d'hygiène et de sécurité.
+                    </p>
+                </div>
+
+                <!-- 3. Garde d'enfants -->
+                <div class="experience-card">
+                    <div class="exp-title">Garde d’enfants âgés de 5 à 9 ans</div>
+                    <div class="exp-meta">feb 2017 - feb. 2022 / italy</div>
+                    <p class="exp-desc">
+                        Garde d’enfants âgés de 5 à 9 ans : veille activement à leur sécurité et bien-être, stimule leur curiosité à travers des activités éducatives et créatives, favorise leur développement social et émotionnel, et entretient une communication claire et régulière avec les parents.
+                    </p>
+                </div>
+
+                <!-- 4. Assistante soins adultes -->
+                <div class="experience-card">
+                    <div class="exp-title">Assistante aux soins des adultes</div>
+                    <div class="exp-meta">janv. 2012 - Nov. 2017 / Roma</div>
+                    <p class="exp-desc">
+                        "Assistante aux soins des adultes : assure l'hygiène personnelle et le confort quotidien des adultes, organise et maintient un environnement propre, sécurisant et agréable, contribue à leur bien-être général, respecte leur autonomie et leur dignité, et communique avec professionnalisme et attention pour garantir un accompagnement de qualité.
+                    </p>
+                </div>
+            </main>
+        </div>
+    </div>
+
+</body>
+</html>
