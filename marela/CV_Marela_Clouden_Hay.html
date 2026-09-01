@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>CV Marela Clouden Hay - Agent Polyvalent & Soins</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -227,6 +227,41 @@
             text-align: justify;
         }
 
+        /* SCREEN RESPONSIVENESS FOR MOBILE & TABLETS */
+        @media screen and (max-width: 768px) {
+            body {
+                padding: 0;
+                background: #ffffff;
+            }
+            .cv-page {
+                width: 100%;
+                height: auto;
+                max-height: none;
+                box-shadow: none;
+                padding: 20px 16px;
+            }
+            .cv-header {
+                flex-direction: column;
+                text-align: center;
+                gap: 14px;
+            }
+            .header-avatar {
+                width: 110px;
+                height: 110px;
+            }
+            .header-name {
+                font-size: 30px;
+            }
+            .cv-body {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            .left-col {
+                border-bottom: 1px solid #e2e8f0;
+                padding-bottom: 16px;
+            }
+        }
+
         @media print {
             body {
                 background: none;
@@ -237,6 +272,22 @@
                 width: 210mm;
                 height: 297mm;
                 max-height: 297mm;
+                padding: 30px 36px 26px;
+                display: flex !important;
+                flex-direction: column !important;
+            }
+            .cv-header {
+                flex-direction: row !important;
+                text-align: left !important;
+            }
+            .cv-body {
+                display: grid !important;
+                grid-template-columns: 240px 1fr !important;
+                gap: 28px !important;
+            }
+            .left-col {
+                border-bottom: none !important;
+                padding-bottom: 0 !important;
             }
         }
     </style>
@@ -349,7 +400,7 @@
                     <div class="exp-title">agent polyvalent</div>
                     <div class="exp-meta">Jul. 2023 - en cours / HOFFMAN Luxembourg</div>
                     <p class="exp-desc">
-                        Agent polyvalent dans une usine pâtissière : participe aux différentes tâches quotidiennes liées à la production, à l'entretien et à l'organisation de l'atelier. Contribue au bon déroulement des opérations en soutenant les équipes, en veillant au respect des normes d'hygiène et de sécurité, et en maintenant un environnement de travail propre et ordonné.
+                        Agent polyvalent dans une usine pâtissière : participe aux différentes tâches quotidiennes liées a la production, à l'entretien et à l'organisation de l'atelier. Contribue au bon déroulement des opérations en soutenant les équipes, en veillant au respect des normes d'hygiène et de sécurité, et en maintenant un environnement de travail propre et ordonné.
                     </p>
                 </div>
             </main>
