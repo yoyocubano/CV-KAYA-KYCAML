@@ -1,239 +1,947 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Magalhaes Monica - KYC Onboarding / AML Junior</title>
-    <meta name="description" content="Portfolio et CV de Magalhaes Monica, spécialiste KYC Onboarding / AML Junior.">
-    
-    <!-- Open Graph / WhatsApp Preview -->
-    <meta property="og:title" content="Magalhaes Monica - KYC Onboarding / AML Junior">
-    <meta property="og:description" content="Portfolio et CV de Magalhaes Monica, spécialiste KYC Onboarding / AML Junior.">
-    <meta property="og:image" content="https://yoyocubano.github.io/CV-KAYA-KYCAML/thumbnail.jpg">
-    <meta property="og:url" content="https://yoyocubano.github.io/CV-KAYA-KYCAML/">
-    <meta property="og:type" content="website">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Santiago Jaramillo | Operaciones • Logística • Mantenimiento Técnico</title>
+  
+  <!-- Metadatos de Búsqueda & Redes Sociales -->
+  <meta name="description" content="Hoja de Vida y Perfil Profesional de Santiago Jaramillo. Experiencia comprobada en operaciones, maquinaria industrial, logística de transporte y mantenimiento locativo en Medellín, Colombia.">
+  <meta name="author" content="Santiago Jaramillo">
+
+  <!-- Favicon Oficial (Última Imagen) -->
+  <link rel="icon" type="image/jpeg" href="assets/santiago_v2.jpg">
+  <link rel="apple-touch-icon" href="assets/santiago_v2.jpg">
+
+  <!-- Open Graph / WhatsApp / Telegram / Facebook Thumbnail -->
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="Santiago Jaramillo | Operaciones • Logística • Mantenimiento">
+  <meta property="og:description" content="Perfil profesional en Medellín, Colombia. Experiencia comprobada en manejo de maquinaria industrial, logística, inventarios y mantenimiento locativo integral. C.C. 1.152.211.346.">
+  <meta property="og:image" content="assets/santiago_v2.jpg">
+  <meta property="og:image:secure_url" content="assets/santiago_v2.jpg">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="800">
+  <meta property="og:image:height" content="1050">
+  <meta property="og:locale" content="es_CO">
+
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Santiago Jaramillo | Perfil Profesional Oficial">
+  <meta name="twitter:description" content="Operaciones • Logística • Mantenimiento Técnico • Medellín, Colombia">
+  <meta name="twitter:image" content="assets/santiago_v2.jpg">
+
+  <!-- Tipografías de Alto Impacto -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --rock-black: #101317;
+      --rock-dark: #181c22;
+      --rock-card: #20252e;
+      --rock-elevated: #282f3a;
+      --rock-border: rgba(255, 255, 255, 0.1);
+      --rock-border-strong: rgba(255, 255, 255, 0.22);
+      --text-white: #ffffff;
+      --text-gray: #b2bac7;
+      --text-muted: #6b778a;
+      --accent-whatsapp: #22c55e;
+      --accent-whatsapp-hover: #16a34a;
+      --font-display: 'Montserrat', sans-serif;
+      --font-body: 'Open Sans', sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-color: var(--rock-black);
+      color: var(--text-white);
+      font-family: var(--font-body);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+
+    /* Floating Navbar (Negro Rock) */
+    .floating-nav {
+      position: fixed;
+      top: 16px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: min(92%, 1120px);
+      background: rgba(20, 24, 30, 0.88);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid var(--rock-border);
+      border-radius: 9999px;
+      padding: 10px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      z-index: 1000;
+      box-shadow: 0 12px 35px rgba(0, 0, 0, 0.6);
+    }
+
+    .nav-brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+      color: var(--text-white);
+    }
+
+    .nav-avatar {
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      border: 2px solid #ffffff;
+      object-fit: cover;
+      object-position: center 10%;
+    }
+
+    .nav-name {
+      font-family: var(--font-display);
+      font-weight: 800;
+      font-size: 15px;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      list-style: none;
+    }
+
+    .nav-link {
+      color: var(--text-gray);
+      text-decoration: none;
+      font-size: 13.5px;
+      font-weight: 600;
+      transition: color 0.2s ease;
+      cursor: pointer;
+    }
+
+    .nav-link:hover {
+      color: #ffffff;
+    }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    /* Buttons */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 10px 20px;
+      border-radius: 8px;
+      font-family: var(--font-display);
+      font-size: 13.5px;
+      font-weight: 700;
+      text-decoration: none;
+      cursor: pointer;
+      border: none;
+      transition: all 0.25s ease;
+      white-space: nowrap;
+    }
+
+    .btn-sm {
+      padding: 7px 14px;
+      font-size: 12px;
+      border-radius: 6px;
+    }
+
+    .btn-primary {
+      background: #ffffff;
+      color: #101317;
+    }
+
+    .btn-primary:hover {
+      background: #e2e8f0;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(255, 255, 255, 0.18);
+    }
+
+    .btn-whatsapp {
+      background: var(--accent-whatsapp);
+      color: #ffffff;
+    }
+
+    .btn-whatsapp:hover {
+      background: var(--accent-whatsapp-hover);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(34, 197, 94, 0.3);
+    }
+
+    .btn-rock {
+      background: var(--rock-elevated);
+      color: var(--text-white);
+      border: 1px solid var(--rock-border);
+    }
+
+    .btn-rock:hover {
+      background: #323a48;
+      border-color: var(--rock-border-strong);
+      transform: translateY(-2px);
+    }
+
+    .container {
+      width: min(92%, 1160px);
+      margin: 0 auto;
+      padding: 0 16px;
+    }
+
+    /* Hero Section (Rock Aesthetic) */
+    .hero-section {
+      padding-top: 130px;
+      padding-bottom: 70px;
+      position: relative;
+    }
+
+    .hero-content {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 48px;
+      align-items: center;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      color: #ffffff;
+      padding: 6px 14px;
+      border-radius: 9999px;
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      margin-bottom: 20px;
+    }
+
+    .hero-badge::before {
+      content: "";
+      width: 8px;
+      height: 8px;
+      background-color: #22c55e;
+      border-radius: 50%;
+      box-shadow: 0 0 8px #22c55e;
+    }
+
+    .hero-title {
+      font-family: var(--font-display);
+      font-size: clamp(34px, 4.4vw, 56px);
+      font-weight: 900;
+      line-height: 1.08;
+      letter-spacing: -0.5px;
+      margin-bottom: 16px;
+      color: #ffffff;
+      text-transform: uppercase;
+    }
+
+    .hero-subtitle {
+      font-family: var(--font-display);
+      font-size: 16px;
+      font-weight: 700;
+      color: #d1d8e4;
+      margin-bottom: 20px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    .hero-description {
+      font-size: 15px;
+      color: var(--text-gray);
+      line-height: 1.7;
+      margin-bottom: 28px;
+      text-align: justify;
+    }
+
+    .hero-description strong {
+      color: #ffffff;
+    }
+
+    /* Ficha Técnica Colombia */
+    .hero-meta-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+      margin-bottom: 30px;
+      background: var(--rock-dark);
+      border: 1px solid var(--rock-border);
+      border-radius: 12px;
+      padding: 16px 20px;
+    }
+
+    .hero-meta-item {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .hero-meta-label {
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      color: var(--text-muted);
+      font-weight: 700;
+    }
+
+    .hero-meta-val {
+      font-size: 13.5px;
+      color: #ffffff;
+      font-weight: 700;
+    }
+
+    .hero-cta-group {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    /* Hero Visual Card */
+    .hero-visual {
+      display: flex;
+      justify-content: center;
+    }
+
+    .profile-card-rock {
+      position: relative;
+      width: 100%;
+      max-width: 380px;
+      background: var(--rock-card);
+      border: 1px solid var(--rock-border-strong);
+      border-radius: 20px;
+      padding: 24px;
+      box-shadow: 0 25px 50px rgba(0, 0, 0, 0.6);
+      text-align: center;
+    }
+
+    .profile-photo-wrap {
+      width: 190px;
+      height: 190px;
+      margin: 0 auto 18px;
+      border-radius: 50%;
+      border: 5px solid #ffffff;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+      overflow: hidden;
+      background: #101317;
+    }
+
+    .profile-photo-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 10%;
+    }
+
+    .profile-card-name {
+      font-family: var(--font-display);
+      font-size: 20px;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      color: #ffffff;
+      margin-bottom: 4px;
+    }
+
+    .profile-card-role {
+      font-size: 12.5px;
+      color: #94a3b8;
+      margin-bottom: 18px;
+      font-weight: 600;
+    }
+
+    .profile-stats-row {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 8px;
+      border-top: 1px solid var(--rock-border);
+      padding-top: 16px;
+    }
+
+    .stat-box {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .stat-number {
+      font-family: var(--font-display);
+      font-size: 18px;
+      font-weight: 900;
+      color: #ffffff;
+    }
+
+    .stat-label {
+      font-size: 10px;
+      color: var(--text-muted);
+      line-height: 1.2;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    /* Section CV Viewer (Negro Rock) */
+    .section-cv-view {
+      padding: 60px 0 80px;
+      background: #0b0d10;
+      border-top: 1px solid var(--rock-border);
+      border-bottom: 1px solid var(--rock-border);
+    }
+
+    .section-header {
+      text-align: center;
+      max-width: 720px;
+      margin: 0 auto 36px;
+    }
+
+    .section-badge {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+      color: #ffffff;
+      background: var(--rock-elevated);
+      border: 1px solid var(--rock-border-strong);
+      padding: 4px 14px;
+      border-radius: 9999px;
+      margin-bottom: 12px;
+    }
+
+    .section-heading {
+      font-family: var(--font-display);
+      font-size: clamp(26px, 3.2vw, 38px);
+      font-weight: 900;
+      color: #ffffff;
+      margin-bottom: 12px;
+      text-transform: uppercase;
+    }
+
+    .section-subtext {
+      color: var(--text-gray);
+      font-size: 14.5px;
+    }
+
+    .cv-toolbar {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      margin-bottom: 20px;
+      flex-wrap: wrap;
+    }
+
+    .cv-frame-box {
+      width: 100%;
+      max-width: 880px;
+      margin: 0 auto;
+      background: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 30px 70px rgba(0, 0, 0, 0.8);
+      overflow: hidden;
+      border: 2px solid var(--rock-border-strong);
+    }
+
+    .cv-frame-box iframe {
+      width: 100%;
+      height: 1180px;
+      border: none;
+      display: block;
+    }
+
+    /* Experience Details Section */
+    .details-section {
+      padding: 80px 0;
+    }
+
+    .grid-2col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 32px;
+    }
+
+    .card-rock {
+      background: var(--rock-card);
+      border: 1px solid var(--rock-border);
+      border-radius: 16px;
+      padding: 28px;
+    }
+
+    .card-title {
+      font-family: var(--font-display);
+      font-size: 18px;
+      font-weight: 800;
+      color: #ffffff;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 22px;
+      border-bottom: 2px solid var(--rock-border-strong);
+      padding-bottom: 8px;
+    }
+
+    .timeline-item {
+      position: relative;
+      padding-left: 20px;
+      padding-bottom: 22px;
+      border-left: 2px solid var(--rock-border);
+    }
+
+    .timeline-item:last-child {
+      padding-bottom: 0;
+      border-left-color: transparent;
+    }
+
+    .timeline-dot {
+      position: absolute;
+      left: -6px;
+      top: 4px;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: #ffffff;
+      box-shadow: 0 0 10px #ffffff;
+    }
+
+    .timeline-role {
+      font-family: var(--font-display);
+      font-weight: 800;
+      font-size: 14.5px;
+      color: #ffffff;
+    }
+
+    .timeline-meta {
+      font-size: 12px;
+      color: #94a3b8;
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+
+    .timeline-desc {
+      font-size: 13px;
+      color: var(--text-gray);
+      line-height: 1.55;
+      text-align: justify;
+    }
+
+    .timeline-desc strong {
+      color: #ffffff;
+    }
+
+    /* Skills Progress */
+    .skill-track {
+      margin-bottom: 16px;
+    }
+
+    .skill-track-info {
+      display: flex;
+      justify-content: space-between;
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 6px;
+      color: #e2e8f0;
+    }
+
+    .skill-track-bar {
+      height: 8px;
+      background: #15181f;
+      border-radius: 4px;
+      overflow: hidden;
+      border: 1px solid var(--rock-border);
+    }
+
+    .skill-track-fill {
+      height: 100%;
+      background: #ffffff;
+      border-radius: 4px;
+    }
+
+    /* Motivation Letter */
+    .letter-card {
+      background: var(--rock-dark);
+      border: 1px solid var(--rock-border-strong);
+      border-radius: 16px;
+      padding: 34px;
+      margin-top: 40px;
+    }
+
+    .letter-body {
+      font-size: 14px;
+      line-height: 1.75;
+      color: #cbd5e1;
+      white-space: pre-line;
+      margin: 20px 0;
+      text-align: justify;
+    }
+
+    /* Footer */
+    .footer {
+      padding: 40px 0;
+      border-top: 1px solid var(--rock-border);
+      text-align: center;
+      font-size: 12.5px;
+      color: var(--text-muted);
+    }
+
+    @media (max-width: 900px) {
+      .hero-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+      .hero-description {
+        text-align: left;
+      }
+      .hero-cta-group {
+        justify-content: center;
+      }
+      .grid-2col {
+        grid-template-columns: 1fr;
+      }
+      .nav-links {
+        display: none;
+      }
+    }
+  </style>
 </head>
 <body>
-    <!-- Advanced UI Background -->
-    <div id="cursor-glow"></div>
-    <div class="background-elements">
-        <div class="blob blob-1"></div>
-        <div class="blob blob-2"></div>
-        <div class="grid-overlay"></div>
-    </div>
 
-    <nav class="navbar">
-        <div class="nav-content">
-            <a href="#" class="logo">MM</a>
-            <ul class="nav-links">
-                <li><a href="#about" data-i18n="nav_about">À propos</a></li>
-                <li><a href="#experience" data-i18n="nav_exp">Expérience</a></li>
-                <li><a href="#skills" data-i18n="nav_skills">Compétences</a></li>
-                <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
-            </ul>
-            <div class="lang-switcher">
-                <button class="lang-btn active" data-lang="fr">FR</button>
-                <button class="lang-btn" data-lang="en">EN</button>
-                <button class="lang-btn" data-lang="de">DE</button>
-                <button class="lang-btn" data-lang="lu">LU</button>
-            </div>
-        </div>
+  <!-- Barra Flotante de Navegación -->
+  <header class="floating-nav">
+    <a href="#" class="nav-brand">
+      <img src="assets/santiago_v2.jpg" alt="Santiago Jaramillo" class="nav-avatar">
+      <span class="nav-name">Santiago Jaramillo</span>
+    </a>
+
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#perfil" class="nav-link">Perfil</a></li>
+        <li><a href="#curriculum" class="nav-link">Hoja de Vida (CV)</a></li>
+        <li><a href="#experiencia" class="nav-link">Experiencia</a></li>
+        <li><a href="#habilidades" class="nav-link">Habilidades</a></li>
+        <li><a href="#carta" class="nav-link">Carta Oficial</a></li>
+      </ul>
     </nav>
 
-    <main>
-        <section id="hero" class="hero section">
-            <div class="hero-container">
-                <div class="hero-content fade-in-left">
-                    <div class="badge" data-i18n="hero_avail">Disponible</div>
-                    <h1>Magalhaes <span>Monica</span></h1>
-                    <h2 data-i18n="hero_title">KYC Onboarding / AML Junior</h2>
-                    <p class="hero-desc" data-i18n="hero_desc">Professionnelle rigoureuse et polyvalente, experte en conformité, gestion administrative et relation client internationale.</p>
-                    <div class="hero-actions">
-                        <a href="#experience" class="btn btn-primary" data-i18n="btn_exp">Voir mon parcours</a>
-                        <a href="#contact" class="btn btn-secondary" data-i18n="btn_contact">Me contacter</a>
-                        <a href="CV%20KAYA%20KYCAML.pdf" class="btn btn-outline" target="_blank" data-i18n="btn_download" download><i class="fa-solid fa-download"></i> Télécharger CV</a>
-                    </div>
-                </div>
-                <div class="hero-image-container fade-in-right">
-                    <div class="image-wrapper tilt-card">
-                        <img src="./monica_portrait.jpg" alt="Monica Magalhaes" class="profile-img" id="profile-picture">
-                        <div class="experience-badge float-anim">
-                            <span class="number">6+</span>
-                            <span class="text" data-i18n="hero_years">Ans<br>d'expérience</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+    <div class="nav-actions">
+      <a href="curriculum_v2_santiago.pdf" target="_blank" class="btn btn-sm btn-primary">
+        Descargar PDF V2
+      </a>
+      <a href="https://wa.me/573241617921?text=Hola%20Santiago,%20vi%20tu%20perfil%20profesional%20y%20me%20gustaria%20contactarte." target="_blank" class="btn btn-sm btn-whatsapp">
+        WhatsApp
+      </a>
+    </div>
+  </header>
 
-        <section id="about" class="contact-bar section fade-in-up">
-            <div class="contact-grid">
-                <div class="contact-item hover-lift">
-                    <div class="icon-box"><i class="fa-solid fa-phone"></i></div>
-                    <div class="contact-details">
-                        <span class="label" data-i18n="contact_phone">Téléphone</span>
-                        <span class="value">06 03 92 74 62</span>
-                    </div>
-                </div>
-                <div class="contact-item hover-lift">
-                    <div class="icon-box"><i class="fa-solid fa-envelope"></i></div>
-                    <div class="contact-details">
-                        <span class="label">Email</span>
-                        <span class="value">monicakaya.contact@gmail.com</span>
-                    </div>
-                </div>
-                <div class="contact-item hover-lift">
-                    <div class="icon-box"><i class="fa-solid fa-car"></i></div>
-                    <div class="contact-details">
-                        <span class="label" data-i18n="contact_license">Permis</span>
-                        <span class="value" data-i18n="contact_license_val">Permis B</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="experience" class="experience section">
-            <div class="section-header fade-in-up">
-                <h2 data-i18n="exp_section_title">Expérience <span>Professionnelle</span></h2>
-                <div class="divider"></div>
-            </div>
-            
-            <div class="timeline" id="experience-timeline">
-                <div class="timeline-progress"></div>
-                
-                <div class="timeline-item fade-in-up">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content glass-card interactive-card">
-                        <div class="timeline-header">
-                            <div class="job-info">
-                                <h3 data-i18n="job1_title">Offboarding KYC Mission</h3>
-                                <h4>Alcyone Consulting / ING Luxembourg</h4>
-                            </div>
-                            <span class="date-badge" data-i18n="job1_date">Fév. 2026 - Avril 2026</span>
-                        </div>
-                        <ul class="job-description">
-                            <li data-i18n="job1_desc1">Analyse et traitement des demandes de clôture de comptes clients Business dans le respect des exigences réglementaires KYC/AML.</li>
-                            <li data-i18n="job1_desc2">Collaboration étroite avec le personnel interne pour assurer la conformité.</li>
-                            <li data-i18n="job1_desc3">Revue complète des dossiers clients (identités, statuts, FATCA, RCS).</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="timeline-item fade-in-up">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content glass-card interactive-card">
-                        <div class="timeline-header">
-                            <div class="job-info">
-                                <h3 data-i18n="job2_title">Gestion Administrative & Comptable</h3>
-                                <h4>Consultors I Tècnics Associats S.L (Andorra)</h4>
-                            </div>
-                            <span class="date-badge" data-i18n="job2_date">Fév. 2023 - Oct. 2024</span>
-                        </div>
-                        <ul class="job-description">
-                            <li data-i18n="job2_desc1">Traitement et analyse de dossiers clients en conformité avec les standards KYC.</li>
-                            <li data-i18n="job2_desc2">Assurer les revues périodiques (ODD) des clients privés, recommandations d'audit.</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="timeline-item fade-in-up">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content glass-card interactive-card">
-                        <div class="timeline-header">
-                            <div class="job-info">
-                                <h3 data-i18n="job3_title">Front Office & Accueil</h3>
-                                <h4>Mora Banc S.A (Andorra)</h4>
-                            </div>
-                            <span class="date-badge" data-i18n="job3_date">Sept. 2021 - Jan. 2023</span>
-                        </div>
-                        <ul class="job-description">
-                            <li data-i18n="job3_desc1">Front office : Accueil et orientation des clients.</li>
-                            <li data-i18n="job3_desc2">Préparation des salles de réunion, gestion et organisation des rdv clients avec les conseillers financiers.</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="timeline-item fade-in-up">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content glass-card interactive-card">
-                        <div class="timeline-header">
-                            <div class="job-info">
-                                <h3 data-i18n="job4_title">Assistante Administrative</h3>
-                                <h4>Sotheby's International Realty (Andorra)</h4>
-                            </div>
-                            <span class="date-badge" data-i18n="job4_date">Nov. 2019 - Août 2021</span>
-                        </div>
-                        <ul class="job-description">
-                            <li data-i18n="job4_desc1">Vérification des données clients KYC et AML via "ACCUITY" et "NAMEBOOK".</li>
-                            <li data-i18n="job4_desc2">Constitution et gestion de dossiers acquéreurs.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="skills" class="skills section">
-            <div class="section-header fade-in-up">
-                <h2 data-i18n="skills_section_title">Compétences & <span>Formation</span></h2>
-                <div class="divider"></div>
-            </div>
-
-            <div class="skills-grid">
-                <div class="skills-column fade-in-up">
-                    <div class="glass-card full-height hover-glow">
-                        <h3 data-i18n="skills_key"><i class="fa-solid fa-list-check"></i> Compétences Clés</h3>
-                        <div class="tags-container">
-                            <span class="tag" data-i18n="skill_1">Conformité KYC/AML</span>
-                            <span class="tag" data-i18n="skill_2">Travail en équipe/autonomie</span>
-                            <span class="tag" data-i18n="skill_3">Sens aigu du détail</span>
-                            <span class="tag" data-i18n="skill_4">Sens de l'analyse</span>
-                            <span class="tag">Pack-Office</span>
-                            <span class="tag" data-i18n="skill_5">Rigoureuse</span>
-                            <span class="tag" data-i18n="skill_6">Force de proposition</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="skills-column fade-in-up" style="transition-delay: 0.2s">
-                    <div class="glass-card full-height hover-glow">
-                        <h3 data-i18n="skills_lang"><i class="fa-solid fa-language"></i> Langues</h3>
-                        <div class="languages-list">
-                            <div class="language-item"><span class="lang-name" data-i18n="lang_es">Espagnol</span><div class="progress-bar"><div class="progress" style="width: 100%"></div></div><span class="lang-level">C2</span></div>
-                            <div class="language-item"><span class="lang-name" data-i18n="lang_ca">Catalan</span><div class="progress-bar"><div class="progress" style="width: 100%"></div></div><span class="lang-level">C2</span></div>
-                            <div class="language-item"><span class="lang-name" data-i18n="lang_fr">Français</span><div class="progress-bar"><div class="progress" style="width: 100%"></div></div><span class="lang-level">C2</span></div>
-                            <div class="language-item"><span class="lang-name" data-i18n="lang_pt">Portugais</span><div class="progress-bar"><div class="progress" style="width: 100%"></div></div><span class="lang-level">C2</span></div>
-                            <div class="language-item"><span class="lang-name" data-i18n="lang_de">Allemand</span><div class="progress-bar"><div class="progress" style="width: 75%"></div></div><span class="lang-level">B2</span></div>
-                            <div class="language-item"><span class="lang-name" data-i18n="lang_en">Anglais</span><div class="progress-bar"><div class="progress" style="width: 50%"></div></div><span class="lang-level">B1</span></div>
-                            <div class="language-item"><span class="lang-name" data-i18n="lang_lu">Luxembourgeois</span><div class="progress-bar"><div class="progress" style="width: 25%"></div></div><span class="lang-level" data-i18n="lang_lu_level" style="font-size: 0.85rem">En cours</span></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="skills-column fade-in-up" style="transition-delay: 0.4s">
-                    <div class="glass-card full-height hover-glow">
-                        <h3 data-i18n="skills_edu"><i class="fa-solid fa-graduation-cap"></i> Formation</h3>
-                        <div class="education-item">
-                            <h4 data-i18n="edu_title">Bac Pro en systèmes informatiques</h4>
-                            <p class="school">Dr. Julio Martins - Portugal</p>
-                            <span class="edu-date">2013 - 2015</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="footer-content">
-            <p>&copy; 2026 Magalhaes Monica.</p>
+  <!-- Hero Section (Negro Rock) -->
+  <section class="hero-section" id="perfil">
+    <div class="container hero-content">
+      <div class="hero-info">
+        <div class="hero-badge">
+          Medellín, Colombia • Vinculación Inmediata
         </div>
-    </footer>
+        <h1 class="hero-title">
+          Santiago Jaramillo
+        </h1>
+        <div class="hero-subtitle">
+          Operaciones • Logística • Mantenimiento Técnico
+        </div>
+        <p class="hero-description">
+          <strong>Profesional responsable, organizado y orientado a resultados operativos.</strong> Solvencia demostrada en <strong>manejo de maquinaria operativa industrial, logística de transporte, control de inventarios</strong> y <strong>mantenimiento locativo integral</strong>. Rigurosa disciplina de servicio, adaptación a turnos rotativos y resolución técnica inmediata en sitio.
+        </p>
 
-    <script src="script.js"></script>
+        <!-- Ficha Técnica de Colombia -->
+        <div class="hero-meta-grid">
+          <div class="hero-meta-item">
+            <span class="hero-meta-label">Cédula de Ciudadanía</span>
+            <span class="hero-meta-val">C.C. 1.152.211.346</span>
+          </div>
+          <div class="hero-meta-item">
+            <span class="hero-meta-label">Ubicación y Residencia</span>
+            <span class="hero-meta-val">Medellín • B. Eduardo Santos</span>
+          </div>
+          <div class="hero-meta-item">
+            <span class="hero-meta-label">Teléfono / WhatsApp</span>
+            <span class="hero-meta-val">+57 324 161 7921</span>
+          </div>
+          <div class="hero-meta-item">
+            <span class="hero-meta-label">Correo Electrónico</span>
+            <span class="hero-meta-val">mizatok@gmail.com</span>
+          </div>
+        </div>
+
+        <div class="hero-cta-group">
+          <a href="https://wa.me/573241617921?text=Hola%20Santiago,%20vi%20tu%20curriculum%20y%20me%20gustaria%20conversar%20sobre%20una%20vacante." target="_blank" class="btn btn-whatsapp">
+            <svg width="17" height="17" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+            Contactar por WhatsApp
+          </a>
+          <a href="curriculum_v2_santiago.pdf" target="_blank" class="btn btn-primary">
+            Descargar PDF Oficial V2
+          </a>
+          <a href="curriculum_v1_santiago.pdf" target="_blank" class="btn btn-rock">
+            Descargar PDF V1
+          </a>
+        </div>
+      </div>
+
+      <!-- Tarjeta Visual (Negro Rock) -->
+      <div class="hero-visual">
+        <div class="profile-card-rock">
+          <div class="profile-photo-wrap">
+            <img src="assets/santiago_v2.jpg" alt="Foto Santiago Jaramillo">
+          </div>
+          <h2 class="profile-card-name">Santiago Jaramillo</h2>
+          <p class="profile-card-role">Medellín, Antioquia • 28 años</p>
+
+          <div class="profile-stats-row">
+            <div class="stat-box">
+              <span class="stat-number">+3 Años</span>
+              <span class="stat-label">Transporte & Logística</span>
+            </div>
+            <div class="stat-box">
+              <span class="stat-number">+3 Años</span>
+              <span class="stat-label">Maquinaria Industrial</span>
+            </div>
+            <div class="stat-box">
+              <span class="stat-number">100%</span>
+              <span class="stat-label">Resolución en Sitio</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección Currículum Réplica Exacta de Google (A4 Viewer) -->
+  <section class="section-cv-view" id="curriculum">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Visualizador Oficial A4</span>
+        <h2 class="section-heading">Curriculum Vitae Adaptado</h2>
+        <p class="section-subtext">
+          Diseño calibrado para reclutadores: atributos clave destacados en negrita, jerarquía visual de alto impacto y llenado simétrico sin espacios muertos.
+        </p>
+      </div>
+
+      <div class="cv-toolbar">
+        <button onclick="setVersion('v2')" id="btnV2" class="btn btn-sm btn-primary">
+          Versión 2 (Chaqueta Ejecutiva)
+        </button>
+        <button onclick="setVersion('v1')" id="btnV1" class="btn btn-sm btn-rock">
+          Versión 1 (Camisa Negra)
+        </button>
+        <a id="btnPdfDownload" href="curriculum_v2_santiago.pdf" target="_blank" class="btn btn-sm btn-whatsapp">
+          Descargar PDF Seleccionado
+        </a>
+      </div>
+
+      <div class="cv-frame-box">
+        <iframe id="cvIframe" src="curriculum_v2_santiago.html" title="Curriculum Vitae Santiago Jaramillo"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trayectoria y Competencias Relevantes para Reclutadores -->
+  <section class="details-section" id="experiencia">
+    <div class="container">
+      <div class="grid-2col">
+        
+        <!-- Experiencia Laboral -->
+        <div class="card-rock">
+          <h3 class="card-title">Trayectoria Laboral Relevante</h3>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-role">Encargado de Minimercado</div>
+            <div class="timeline-meta">6 meses – Actualmente laborando | Medellín</div>
+            <p class="timeline-desc">
+              <strong>Dirección integral de operaciones:</strong> Atención al cliente, <strong>control riguroso de caja</strong>, arqueos diarios, gestión estratégica de inventarios y <strong>mantenimiento locativo con aseo profundo</strong>.
+            </p>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-role">Auxiliar de Logística y Operaciones</div>
+            <div class="timeline-meta">One Eventos • 1 año | Medellín</div>
+            <p class="timeline-desc">
+              <strong>Montaje de infraestructura técnica:</strong> Coordinación de mobiliario y cableado para eventos masivos y corporativos. <strong>Control de accesos y resolución de contingencias en tiempo real</strong>.
+            </p>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-role">Gestor de Transporte Logístico</div>
+            <div class="timeline-meta">InDriver • Más de 3 años | Área Metropolitana de Medellín</div>
+            <p class="timeline-desc">
+              <strong>Movilidad urbana y transporte:</strong> Operación bajo altos estándares de <strong>puntualidad y seguridad</strong>. Optimización autónoma de rutas y <strong>mantenimiento preventivo automotriz</strong>.
+            </p>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-role">Operario de Maquinaria Industrial</div>
+            <div class="timeline-meta">Empresa de Manufactura (Familiar) • Más de 3 años</div>
+            <p class="timeline-desc">
+              <strong>Operación y puesta a punto:</strong> Maquinaria especializada de producción, asegurando cuotas y <strong>minimizando mermas</strong>. Control de calidad, <strong>embalaje técnico y despacho</strong>.
+            </p>
+          </div>
+        </div>
+
+        <!-- Habilidades Técnicas & Oficios -->
+        <div class="card-rock" id="habilidades">
+          <h3 class="card-title">Habilidades & Oficios Técnicos</h3>
+
+          <div class="skill-track">
+            <div class="skill-track-info">
+              <span>Mantenimiento Locativo & Preventivo</span>
+              <span>95%</span>
+            </div>
+            <div class="skill-track-bar">
+              <div class="skill-track-fill" style="width: 95%;"></div>
+            </div>
+          </div>
+
+          <div class="skill-track">
+            <div class="skill-track-info">
+              <span>Maquinaria Operativa Industrial</span>
+              <span>90%</span>
+            </div>
+            <div class="skill-track-bar">
+              <div class="skill-track-fill" style="width: 90%;"></div>
+            </div>
+          </div>
+
+          <div class="skill-track">
+            <div class="skill-track-info">
+              <span>Gestión de Inventarios y Caja</span>
+              <span>88%</span>
+            </div>
+            <div class="skill-track-bar">
+              <div class="skill-track-fill" style="width: 88%;"></div>
+            </div>
+          </div>
+
+          <div class="skill-track">
+            <div class="skill-track-info">
+              <span>Acabados, Obra Blanca y Pintura</span>
+              <span>86%</span>
+            </div>
+            <div class="skill-track-bar">
+              <div class="skill-track-fill" style="width: 86%;"></div>
+            </div>
+          </div>
+
+          <div class="skill-track">
+            <div class="skill-track-info">
+              <span>Reparaciones Eléctricas Básicas</span>
+              <span>82%</span>
+            </div>
+            <div class="skill-track-bar">
+              <div class="skill-track-fill" style="width: 82%;"></div>
+            </div>
+          </div>
+
+          <div class="skill-track">
+            <div class="skill-track-info">
+              <span>Fontanería y Redes de Acueducto</span>
+              <span>80%</span>
+            </div>
+            <div class="skill-track-bar">
+              <div class="skill-track-fill" style="width: 80%;"></div>
+            </div>
+          </div>
+
+          <div style="margin-top: 24px; padding-top: 18px; border-top: 1px solid var(--rock-border);">
+            <div style="font-weight: 800; color: #ffffff; text-transform: uppercase; font-size: 13px; margin-bottom: 6px;">Formación Académica</div>
+            <div style="font-size: 14px; color: #ffffff; font-weight: 700;">Bachiller Académico</div>
+            <div style="font-size: 12.5px; color: var(--text-gray);">Colegio Samuel Barrientos, Medellín • Graduado: 2017</div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Carta de Presentación Oficial -->
+      <div class="letter-card" id="carta">
+        <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px;">
+          <h3 class="card-title" style="margin-bottom: 0; border-bottom: none; padding-bottom: 0;">
+            Carta de Presentación & Motivación
+          </h3>
+          <span style="font-size: 12px; color: #94a3b8; text-transform: uppercase; font-weight: 700;">Documento Oficial</span>
+        </div>
+
+        <div class="letter-body">
+Estimados señores del equipo de selección:
+
+Me dirijo a ustedes con gran interés por formar parte de su equipo de trabajo. Mi objetivo es integrarme a una empresa referente en el sector, donde pueda aportar mi energía, compromiso y una actitud proactiva ante los desafíos operativos diarios.
+
+Como profesional, me destaco por mi versatilidad y capacidad de adaptación. Cuento con una sólida trayectoria en labores operativas, logística y mantenimiento, lo que me permite asumir responsabilidades diversas con eficiencia. Soy una persona organizada, con facilidad para el trabajo en equipo y una constante disposición para aprender nuevas funciones que contribuyan al éxito de la organización. Me motiva la posibilidad de aportar ideas prácticas y garantizar que cada tarea, desde la logística hasta el mantenimiento general, se realice con los más altos estándares de calidad y orden.
+
+Agradezco de antemano el tiempo dedicado a revisar mi perfil. Quedo a su entera disposición para una entrevista, donde podré profundizar en cómo mi experiencia y mis competencias técnicas pueden ser de gran valor para su organización.
+
+Atentamente,
+<strong>Santiago Jaramillo</strong>
+C.C. 1.152.211.346 • Medellín, Colombia
+Teléfono: +57 324 161 7921 • Correo: mizatok@gmail.com
+        </div>
+
+        <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+          <a href="https://wa.me/573241617921?text=Hola%20Santiago,%20lei%20tu%20carta%20y%20me%20gustaria%20agendar%20una%20entrevista." target="_blank" class="btn btn-whatsapp">
+            Agendar Entrevista por WhatsApp
+          </a>
+          <a href="tel:+573241617921" class="btn btn-rock">
+            Llamar Directamente
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>Currículum Vitae & Perfil Profesional de Santiago Jaramillo • Medellín, Colombia</p>
+      <p style="margin-top: 4px; font-size: 11.5px;">Optimizado para impresión de alta resolución A4 y lectura óptica por reclutadores.</p>
+    </div>
+  </footer>
+
+  <script>
+    function setVersion(ver) {
+      const iframe = document.getElementById('cvIframe');
+      const btnV1 = document.getElementById('btnV1');
+      const btnV2 = document.getElementById('btnV2');
+      const btnPdf = document.getElementById('btnPdfDownload');
+
+      if (ver === 'v1') {
+        iframe.src = 'curriculum_v1_santiago.html';
+        btnV1.className = 'btn btn-sm btn-primary';
+        btnV2.className = 'btn btn-sm btn-rock';
+        btnPdf.href = 'curriculum_v1_santiago.pdf';
+        btnPdf.innerText = 'Descargar PDF V1';
+      } else {
+        iframe.src = 'curriculum_v2_santiago.html';
+        btnV2.className = 'btn btn-sm btn-primary';
+        btnV1.className = 'btn btn-sm btn-rock';
+        btnPdf.href = 'curriculum_v2_santiago.pdf';
+        btnPdf.innerText = 'Descargar PDF V2';
+      }
+    }
+  </script>
+
 </body>
 </html>

@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curriculum Vitae V1 - Santiago Jaramillo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,700&family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --sidebar-bg: #272b33;
+      --sidebar-text: #f3f5f8;
+      --sidebar-muted: #abb3c0;
+      --sidebar-accent: #ffffff;
+      --main-bg: #ffffff;
+      --text-main: #1e2229;
+      --text-muted: #535b69;
+      --section-heading: #14171d;
+      --bar-bg: #e2e6ec;
+      --bar-fill: #272b33;
+      --highlight-dark: #0f1217;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+
+    body {
+      font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background-color: #cbd2dc;
+      color: var(--text-main);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px 0;
+      min-height: 100vh;
+    }
+
+    /* Action Bar */
+    .action-bar {
+      display: flex;
+      gap: 12px;
+      margin-bottom: 16px;
+      z-index: 10;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 9px 20px;
+      border-radius: 8px;
+      font-weight: 700;
+      font-size: 13.5px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: all 0.2s ease;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.14);
+      border: none;
+    }
+
+    .btn-primary {
+      background: #1e2229;
+      color: #fff;
+    }
+
+    .btn-primary:hover {
+      background: #000;
+      transform: translateY(-1px);
+    }
+
+    .btn-whatsapp {
+      background: #25d366;
+      color: #fff;
+    }
+
+    .btn-whatsapp:hover {
+      background: #20ba59;
+      transform: translateY(-1px);
+    }
+
+    .btn-outline {
+      background: #fff;
+      color: #272b33;
+      border: 1px solid #cbd5e1;
+    }
+
+    .btn-outline:hover {
+      background: #f8fafc;
+    }
+
+    /* CV Sheet Page (Exact A4 Calibrado) */
+    .cv-page {
+      width: 210mm;
+      height: 294mm;
+      min-height: 294mm;
+      max-height: 294mm;
+      background: var(--main-bg);
+      display: grid;
+      grid-template-columns: 78mm 132mm;
+      box-shadow: 0 16px 40px rgba(0, 0, 0, 0.24);
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* Left Sidebar (Negro Rock Grafito) */
+    .cv-sidebar {
+      background-color: var(--sidebar-bg);
+      color: var(--sidebar-text);
+      padding: 26px 20px 20px 22px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+      border-right: 1px solid rgba(0,0,0,0.15);
+    }
+
+    .cv-sidebar-top {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      width: 100%;
+    }
+
+    .avatar-wrapper {
+      width: 136px;
+      height: 136px;
+      border-radius: 50%;
+      border: 4px solid #ffffff;
+      overflow: hidden;
+      margin-bottom: 14px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
+      background-color: #1e2229;
+      flex-shrink: 0;
+    }
+
+    .avatar-wrapper img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 12%;
+      display: block;
+    }
+
+    .candidate-name {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 23px;
+      font-weight: 900;
+      line-height: 1.1;
+      letter-spacing: 0.5px;
+      color: var(--sidebar-accent);
+      text-transform: uppercase;
+      margin-bottom: 6px;
+    }
+
+    .candidate-role {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 11px;
+      font-weight: 600;
+      color: #d2d7e1;
+      line-height: 1.35;
+      margin-bottom: 14px;
+      letter-spacing: 0.7px;
+      text-transform: uppercase;
+    }
+
+    /* Sidebar Sections */
+    .sidebar-section {
+      width: 100%;
+      text-align: left;
+      margin-top: 10px;
+    }
+
+    .sidebar-heading {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 11.5px;
+      font-weight: 800;
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+      color: #ffffff;
+      margin-bottom: 6px;
+      border-bottom: 1.5px solid rgba(255, 255, 255, 0.2);
+      padding-bottom: 2px;
+    }
+
+    .contact-list {
+      list-style: none;
+      font-size: 10.5px;
+      line-height: 1.42;
+      color: var(--sidebar-muted);
+    }
+
+    .contact-item {
+      margin-bottom: 5px;
+    }
+
+    .contact-item strong {
+      color: #ffffff;
+      display: block;
+      font-size: 9.5px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 1px;
+    }
+
+    .contact-item a {
+      color: #ffffff;
+      text-decoration: none;
+    }
+
+    .sidebar-bullet-list {
+      list-style: none;
+      padding-left: 0;
+      font-size: 10.2px;
+      line-height: 1.38;
+      color: #e2e6ed;
+    }
+
+    .sidebar-bullet-list li {
+      position: relative;
+      padding-left: 11px;
+      margin-bottom: 4px;
+    }
+
+    .sidebar-bullet-list li::before {
+      content: "▪";
+      position: absolute;
+      left: 0;
+      color: #ffffff;
+      font-size: 9px;
+    }
+
+    /* Right Main Content */
+    .cv-main {
+      background-color: var(--main-bg);
+      padding: 24px 26px 18px 26px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+    }
+
+    .section-title {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 12.5px;
+      font-weight: 800;
+      letter-spacing: 1.2px;
+      color: var(--section-heading);
+      text-transform: uppercase;
+      margin-bottom: 5px;
+      border-bottom: 2px solid var(--section-heading);
+      padding-bottom: 2px;
+    }
+
+    .section-block {
+      margin-bottom: 8px;
+    }
+
+    .section-block:last-child {
+      margin-bottom: 0;
+    }
+
+    .profile-text {
+      font-size: 10.4px;
+      line-height: 1.48;
+      color: var(--text-main);
+      text-align: justify;
+      text-justify: inter-word;
+    }
+
+    .profile-text strong {
+      font-weight: 700;
+      color: var(--highlight-dark);
+    }
+
+    /* Experience Items */
+    .experience-item {
+      margin-bottom: 7px;
+    }
+
+    .experience-item:last-child {
+      margin-bottom: 0;
+    }
+
+    .experience-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 1px;
+    }
+
+    .job-title {
+      font-size: 11.5px;
+      font-weight: 800;
+      color: var(--highlight-dark);
+    }
+
+    .job-meta {
+      font-size: 10px;
+      color: #58616f;
+      font-weight: 600;
+      margin-bottom: 2px;
+    }
+
+    .job-bullets {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .job-bullets li {
+      font-size: 10px;
+      line-height: 1.38;
+      color: #2e333d;
+      position: relative;
+      padding-left: 11px;
+      margin-bottom: 2px;
+      text-align: justify;
+      text-justify: inter-word;
+    }
+
+    .job-bullets li::before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      color: var(--sidebar-bg);
+      font-size: 12px;
+      line-height: 1;
+    }
+
+    .job-bullets li strong {
+      font-weight: 700;
+      color: var(--highlight-dark);
+    }
+
+    /* Education */
+    .education-item {
+      margin-bottom: 1px;
+    }
+
+    .edu-title {
+      font-size: 11px;
+      font-weight: 800;
+      color: var(--highlight-dark);
+    }
+
+    .edu-meta {
+      font-size: 9.8px;
+      color: #58616f;
+      font-weight: 600;
+    }
+
+    /* Skills Grid with Level Bars */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 5px 10px;
+      margin-top: 3px;
+    }
+
+    .skill-item {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    .skill-name {
+      font-size: 9.6px;
+      font-weight: 700;
+      color: var(--highlight-dark);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .skill-bar-bg {
+      width: 100%;
+      height: 6px;
+      background-color: var(--bar-bg);
+      border-radius: 4px;
+      overflow: hidden;
+    }
+
+    .skill-bar-fill {
+      height: 100%;
+      background-color: var(--bar-fill);
+      border-radius: 4px;
+    }
+
+    /* Competencies Box */
+    .competencies-box {
+      margin-top: 5px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3px 6px;
+    }
+
+    .comp-item {
+      font-size: 9.2px;
+      color: #1a1e24;
+      background: #f1f3f7;
+      border-left: 3px solid #272b33;
+      padding: 2.5px 5px;
+      border-radius: 2px;
+      font-weight: 700;
+      text-align: left;
+    }
+
+    /* Print Styles */
+    @media print {
+      body {
+        background: transparent !important;
+        padding: 0 !important;
+        margin: 0 !important;
+      }
+
+      .action-bar {
+        display: none !important;
+      }
+
+      .cv-page {
+        box-shadow: none !important;
+        margin: 0 !important;
+        width: 210mm !important;
+        height: 294mm !important;
+        max-height: 294mm !important;
+        page-break-after: avoid;
+        page-break-inside: avoid;
+      }
+
+      @page {
+        size: A4 portrait;
+        margin: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Barra de Acciones y Descarga -->
+  <div class="action-bar">
+    <button onclick="window.print()" class="btn btn-primary">
+      <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"></path></svg>
+      Imprimir / Guardar PDF (V1)
+    </button>
+    <a href="https://wa.me/573241617921?text=Hola%20Santiago,%20vi%20tu%20curriculum%20y%20me%20gustaria%20conversar%20sobre%20una%20oportunidad%20laboral." target="_blank" class="btn btn-whatsapp">
+      <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+      WhatsApp (+57)
+    </a>
+    <a href="curriculum_v2_santiago.html" class="btn btn-outline">
+      Ver Versión 2 (Chaqueta)
+    </a>
+    <a href="index.html" class="btn btn-outline">
+      Ver Landing Page
+    </a>
+  </div>
+
+  <!-- Contenedor Hoja CV Impresión Exacta y Llena sin cortes -->
+  <main class="cv-page" id="cvContent">
+    <!-- COLUMNA LATERAL (Estilo exacto Google) -->
+    <aside class="cv-sidebar">
+      <div class="cv-sidebar-top">
+        <div class="avatar-wrapper">
+          <img src="assets/santiago.jpg" alt="Santiago Jaramillo">
+        </div>
+        <h1 class="candidate-name">
+          Santiago<br>Jaramillo
+        </h1>
+        <p class="candidate-role">
+          Operaciones • Logística<br>Mantenimiento Técnico
+        </p>
+
+        <!-- Información de Contacto Colombia -->
+        <div class="sidebar-section">
+          <h2 class="sidebar-heading">Contacto Directo</h2>
+          <ul class="contact-list">
+            <li class="contact-item">
+              <strong>Teléfono / WhatsApp</strong>
+              <a href="tel:+573241617921">+57 324 161 7921</a>
+            </li>
+            <li class="contact-item">
+              <strong>Correo Electrónico</strong>
+              <a href="mailto:mizatok@gmail.com">mizatok@gmail.com</a>
+            </li>
+            <li class="contact-item">
+              <strong>Ciudad y País</strong>
+              Medellín, Antioquia, Colombia
+            </li>
+            <li class="contact-item">
+              <strong>Dirección de Residencia</strong>
+              Calle 42b # 120c - 47<br>Barrio Eduardo Santos
+            </li>
+          </ul>
+        </div>
+
+        <!-- Datos Clave Colombia -->
+        <div class="sidebar-section">
+          <h2 class="sidebar-heading">Datos Clave</h2>
+          <ul class="contact-list">
+            <li class="contact-item">
+              <strong>Cédula de Ciudadanía</strong>
+              C.C. 1.152.211.346
+            </li>
+            <li class="contact-item">
+              <strong>Fecha de Nacimiento</strong>
+              11 de noviembre de 1995
+            </li>
+            <li class="contact-item">
+              <strong>Disponibilidad Horaria</strong>
+              Inmediata / Turnos rotativos
+            </li>
+          </ul>
+        </div>
+
+        <!-- Competencias Profesionales -->
+        <div class="sidebar-section">
+          <h2 class="sidebar-heading">Competencias</h2>
+          <ul class="sidebar-bullet-list">
+            <li><strong>Orientación al logro</strong> y optimización</li>
+            <li><strong>Aprendizaje ágil</strong> y polivalente</li>
+            <li><strong>Trabajo en equipo</strong> y comunicación</li>
+            <li><strong>Resolución técnica</strong> en sitio</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="cv-sidebar-bottom">
+        <div class="sidebar-section" style="margin-top: 0;">
+          <h2 class="sidebar-heading">Idiomas</h2>
+          <p class="contact-list" style="font-size: 10.5px;">
+            <strong style="color: #fff; font-size: 9.5px;">Español:</strong> Lengua materna (Nativo)
+          </p>
+        </div>
+      </div>
+    </aside>
+
+    <!-- COLUMNA PRINCIPAL (Relevancia y Atributos para Reclutadores sin cortes) -->
+    <section class="cv-main">
+      <!-- PERFIL PROFESIONAL -->
+      <div class="section-block">
+        <h2 class="section-title">Perfil Profesional</h2>
+        <p class="profile-text">
+          <strong>Profesional responsable, organizado y con sólida orientación al trabajo en equipo.</strong> Alta capacidad de adaptación a turnos y funciones exigentes, con <strong>aprendizaje rápido y ejecución multitarea eficiente.</strong> Experiencia comprobada en <strong>labores operativas, manejo y calibración de maquinaria industrial, logística de transporte, control de inventarios y mantenimiento locativo integral</strong> (redes eléctricas básicas, fontanería y acabados). Se destaca por su <strong>compromiso ético, rigurosa disciplina operativa y capacidad comprobada para resolver contingencias técnicas en sitio.</strong>
+        </p>
+      </div>
+
+      <!-- EXPERIENCIA LABORAL -->
+      <div class="section-block">
+        <h2 class="section-title">Experiencia Laboral</h2>
+
+        <!-- Cargo 1 -->
+        <article class="experience-item">
+          <div class="experience-header">
+            <span class="job-title">Encargado de Minimercado</span>
+            <span class="job-meta">6 meses – Actualmente laborando</span>
+          </div>
+          <div class="job-meta">Medellín, Colombia</div>
+          <ul class="job-bullets">
+            <li><strong>Dirección integral de operaciones:</strong> Liderazgo en atención personalizada al cliente, <strong>control riguroso de caja</strong>, <strong>arqueos</strong>, supervisión de inventarios y <strong>surtido estratégico de mercancía</strong> garantizando cero mermas.</li>
+            <li><strong>Mantenimiento locativo y adecuación:</strong> Ejecución de <strong>mantenimiento preventivo general</strong>, <strong>reparaciones técnicas básicas</strong> y aseo profundo para mantener las instalaciones en condiciones <strong>100% higiénicas y operativas</strong>.</li>
+          </ul>
+        </article>
+
+        <!-- Cargo 2 -->
+        <article class="experience-item">
+          <div class="experience-header">
+            <span class="job-title">Auxiliar de Logística y Operaciones</span>
+            <span class="job-meta">1 año</span>
+          </div>
+          <div class="job-meta">One Eventos | Medellín, Colombia</div>
+          <ul class="job-bullets">
+            <li><strong>Infraestructura técnica y montaje:</strong> Coordinación y montaje operativo de <strong>mobiliario, cableado y recursos logísticos</strong> para la ejecución de <strong>eventos masivos, corporativos y comerciales</strong> de alta envergadura.</li>
+            <li><strong>Control de flujos y contingencias:</strong> Gestión de acceso de asistentes, supervisión estricta de <strong>protocolos de seguridad</strong> y <strong>resolución ágil de imprevistos operativos en tiempo real</strong>.</li>
+          </ul>
+        </article>
+
+        <!-- Cargo 3 -->
+        <article class="experience-item">
+          <div class="experience-header">
+            <span class="job-title">Gestor de Transporte Logístico</span>
+            <span class="job-meta">Más de 3 años</span>
+          </div>
+          <div class="job-meta">InDriver | Área Metropolitana de Medellín</div>
+          <ul class="job-bullets">
+            <li><strong>Servicio y movilidad urbana:</strong> Prestación de servicios de movilidad bajo <strong>estándares rigurosos de puntualidad, seguridad y calificación positiva</strong> en el Valle de Aburrá.</li>
+            <li><strong>Optimización de trayectos y mantenimiento:</strong> Planificación autónoma de <strong>rutas eficientes</strong>, cumplimiento de tiempos de entrega y ejecución de <strong>mantenimiento preventivo vehicular</strong> para garantizar disponibilidad continua.</li>
+          </ul>
+        </article>
+
+        <!-- Cargo 4 -->
+        <article class="experience-item">
+          <div class="experience-header">
+            <span class="job-title">Operario de Maquinaria Industrial</span>
+            <span class="job-meta">Más de 3 años</span>
+          </div>
+          <div class="job-meta">Empresa de Manufactura (Familiar) | Medellín, Colombia</div>
+          <ul class="job-bullets">
+            <li><strong>Operación y puesta a punto:</strong> Calibración, ajuste y puesta en marcha de <strong>maquinaria especializada de producción</strong>, cumpliendo estrictamente con las <strong>cuotas de fabricación y minimizando mermas de material</strong>.</li>
+            <li><strong>Control de calidad y embalaje técnico:</strong> Inspección en línea del producto terminado, empaque seguro, <strong>almacenamiento técnico</strong> y preparación para <strong>despacho logístico final</strong>.</li>
+          </ul>
+        </article>
+      </div>
+
+      <!-- FORMACIÓN ACADÉMICA -->
+      <div class="section-block">
+        <h2 class="section-title">Formación Académica</h2>
+        <div class="education-item">
+          <div class="experience-header">
+            <span class="edu-title">Bachiller Académico</span>
+            <span class="edu-meta">Año de graduación: 2017</span>
+          </div>
+          <div class="edu-meta">Colegio Samuel Barrientos, Medellín, Colombia • Énfasis en formación y disciplina</div>
+        </div>
+      </div>
+
+      <!-- HABILIDADES Y OFICIOS TÉCNICOS (Calibrado para no cortarse) -->
+      <div class="section-block">
+        <h2 class="section-title">Habilidades y Oficios Técnicos</h2>
+        <div class="skills-grid">
+          <div class="skill-item">
+            <span class="skill-name">Maquinaria operativa industrial</span>
+            <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 90%;"></div></div>
+          </div>
+          <div class="skill-item">
+            <span class="skill-name">Mantenimiento locativo y aseo</span>
+            <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 95%;"></div></div>
+          </div>
+          <div class="skill-item">
+            <span class="skill-name">Gestión de inventarios y caja</span>
+            <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 88%;"></div></div>
+          </div>
+          <div class="skill-item">
+            <span class="skill-name">Reparaciones eléctricas básicas</span>
+            <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 82%;"></div></div>
+          </div>
+          <div class="skill-item">
+            <span class="skill-name">Fontanería y redes acueducto</span>
+            <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 80%;"></div></div>
+          </div>
+          <div class="skill-item">
+            <span class="skill-name">Acabados, obra blanca y pintura</span>
+            <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 86%;"></div></div>
+          </div>
+        </div>
+
+        <div class="competencies-box">
+          <div class="comp-item">✔ Optimización de procesos y cuotas</div>
+          <div class="comp-item">✔ Trabajo en equipo y comunicación</div>
+          <div class="comp-item">✔ Adaptabilidad técnica y polivalente</div>
+          <div class="comp-item">✔ Resolución técnica inmediata en sitio</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+</body>
+</html>
