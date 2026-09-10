@@ -4,6 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Curriculum Vitae V2 - Santiago Jaramillo</title>
+  
+  <link rel="icon" type="image/jpeg" href="assets/santiago_v2.jpg">
+  <link rel="apple-touch-icon" href="assets/santiago_v2.jpg">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,700&family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -37,7 +41,7 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding: 20px 0;
+      padding: 20px 12px;
       min-height: 100vh;
     }
 
@@ -47,6 +51,8 @@
       gap: 12px;
       margin-bottom: 16px;
       z-index: 10;
+      flex-wrap: wrap;
+      justify-content: center;
     }
 
     .btn {
@@ -94,25 +100,24 @@
       background: #f8fafc;
     }
 
-    /* CV Sheet Page (Exact A4 Calibrado) */
+    /* CV Container Desktop */
     .cv-page {
       width: 210mm;
-      height: 294mm;
-      min-height: 294mm;
-      max-height: 294mm;
+      height: 297mm;
+      max-height: 297mm;
       background: var(--main-bg);
       display: grid;
-      grid-template-columns: 78mm 132mm;
+      grid-template-columns: 74mm 136mm;
       box-shadow: 0 16px 40px rgba(0, 0, 0, 0.24);
       position: relative;
       overflow: hidden;
     }
 
-    /* Left Sidebar (Negro Rock Grafito) */
+    /* Left Sidebar */
     .cv-sidebar {
       background-color: var(--sidebar-bg);
       color: var(--sidebar-text);
-      padding: 26px 20px 20px 22px;
+      padding: 22px 18px 20px 20px;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -129,12 +134,12 @@
     }
 
     .avatar-wrapper {
-      width: 136px;
-      height: 136px;
+      width: 122px;
+      height: 122px;
       border-radius: 50%;
       border: 4px solid #ffffff;
       overflow: hidden;
-      margin-bottom: 14px;
+      margin-bottom: 12px;
       box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
       background-color: #1e2229;
       flex-shrink: 0;
@@ -150,60 +155,59 @@
 
     .candidate-name {
       font-family: 'Montserrat', sans-serif;
-      font-size: 23px;
+      font-size: 22px;
       font-weight: 900;
       line-height: 1.1;
       letter-spacing: 0.5px;
       color: var(--sidebar-accent);
       text-transform: uppercase;
-      margin-bottom: 6px;
+      margin-bottom: 5px;
     }
 
     .candidate-role {
       font-family: 'Montserrat', sans-serif;
-      font-size: 11px;
+      font-size: 10.5px;
       font-weight: 600;
       color: #d2d7e1;
       line-height: 1.35;
-      margin-bottom: 14px;
+      margin-bottom: 12px;
       letter-spacing: 0.7px;
       text-transform: uppercase;
     }
 
-    /* Sidebar Sections */
     .sidebar-section {
       width: 100%;
       text-align: left;
-      margin-top: 10px;
+      margin-top: 8px;
     }
 
     .sidebar-heading {
       font-family: 'Montserrat', sans-serif;
-      font-size: 11.5px;
+      font-size: 11px;
       font-weight: 800;
       letter-spacing: 1.2px;
       text-transform: uppercase;
       color: #ffffff;
-      margin-bottom: 6px;
+      margin-bottom: 5px;
       border-bottom: 1.5px solid rgba(255, 255, 255, 0.2);
       padding-bottom: 2px;
     }
 
     .contact-list {
       list-style: none;
-      font-size: 10.5px;
-      line-height: 1.42;
+      font-size: 10.2px;
+      line-height: 1.4;
       color: var(--sidebar-muted);
     }
 
     .contact-item {
-      margin-bottom: 5px;
+      margin-bottom: 4.5px;
     }
 
     .contact-item strong {
       color: #ffffff;
       display: block;
-      font-size: 9.5px;
+      font-size: 9px;
       text-transform: uppercase;
       letter-spacing: 0.5px;
       margin-bottom: 1px;
@@ -217,15 +221,15 @@
     .sidebar-bullet-list {
       list-style: none;
       padding-left: 0;
-      font-size: 10.2px;
-      line-height: 1.38;
+      font-size: 10px;
+      line-height: 1.35;
       color: #e2e6ed;
     }
 
     .sidebar-bullet-list li {
       position: relative;
-      padding-left: 11px;
-      margin-bottom: 4px;
+      padding-left: 10px;
+      margin-bottom: 3.5px;
     }
 
     .sidebar-bullet-list li::before {
@@ -239,36 +243,33 @@
     /* Right Main Content */
     .cv-main {
       background-color: var(--main-bg);
-      padding: 24px 26px 18px 26px;
+      padding: 20px 24px 22px 24px;
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
+      justify-content: flex-start;
+      gap: 8px;
       height: 100%;
     }
 
     .section-title {
       font-family: 'Montserrat', sans-serif;
-      font-size: 12.5px;
+      font-size: 11.8px;
       font-weight: 800;
       letter-spacing: 1.2px;
       color: var(--section-heading);
       text-transform: uppercase;
-      margin-bottom: 5px;
+      margin-bottom: 3.5px;
       border-bottom: 2px solid var(--section-heading);
       padding-bottom: 2px;
     }
 
     .section-block {
-      margin-bottom: 8px;
-    }
-
-    .section-block:last-child {
-      margin-bottom: 0;
+      margin-bottom: 2px;
     }
 
     .profile-text {
-      font-size: 10.4px;
-      line-height: 1.48;
+      font-size: 10px;
+      line-height: 1.42;
       color: var(--text-main);
       text-align: justify;
       text-justify: inter-word;
@@ -281,11 +282,7 @@
 
     /* Experience Items */
     .experience-item {
-      margin-bottom: 7px;
-    }
-
-    .experience-item:last-child {
-      margin-bottom: 0;
+      margin-bottom: 5px;
     }
 
     .experience-header {
@@ -293,16 +290,17 @@
       justify-content: space-between;
       align-items: baseline;
       margin-bottom: 1px;
+      flex-wrap: wrap;
     }
 
     .job-title {
-      font-size: 11.5px;
+      font-size: 11px;
       font-weight: 800;
       color: var(--highlight-dark);
     }
 
     .job-meta {
-      font-size: 10px;
+      font-size: 9.6px;
       color: #58616f;
       font-weight: 600;
       margin-bottom: 2px;
@@ -314,12 +312,12 @@
     }
 
     .job-bullets li {
-      font-size: 10px;
-      line-height: 1.38;
+      font-size: 9.6px;
+      line-height: 1.34;
       color: #2e333d;
       position: relative;
       padding-left: 11px;
-      margin-bottom: 2px;
+      margin-bottom: 1.5px;
       text-align: justify;
       text-justify: inter-word;
     }
@@ -344,23 +342,24 @@
     }
 
     .edu-title {
-      font-size: 11px;
+      font-size: 10.6px;
       font-weight: 800;
       color: var(--highlight-dark);
     }
 
     .edu-meta {
-      font-size: 9.8px;
+      font-size: 9.4px;
       color: #58616f;
       font-weight: 600;
     }
 
-    /* Skills Grid with Level Bars */
+    /* Skills Grid (2 Columnas Espaciosas: 100% libre de cortes laterales e inferiores) */
     .skills-grid {
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      gap: 5px 10px;
+      grid-template-columns: 1fr 1fr;
+      gap: 5px 16px;
       margin-top: 3px;
+      margin-bottom: 5px;
     }
 
     .skill-item {
@@ -370,7 +369,7 @@
     }
 
     .skill-name {
-      font-size: 9.6px;
+      font-size: 9.4px;
       font-weight: 700;
       color: var(--highlight-dark);
       white-space: nowrap;
@@ -380,7 +379,7 @@
 
     .skill-bar-bg {
       width: 100%;
-      height: 6px;
+      height: 5.5px;
       background-color: var(--bar-bg);
       border-radius: 4px;
       overflow: hidden;
@@ -394,24 +393,84 @@
 
     /* Competencies Box */
     .competencies-box {
-      margin-top: 5px;
+      margin-top: 3px;
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 3px 6px;
+      gap: 3px 8px;
     }
 
     .comp-item {
-      font-size: 9.2px;
+      font-size: 8.8px;
       color: #1a1e24;
       background: #f1f3f7;
       border-left: 3px solid #22262d;
-      padding: 2.5px 5px;
+      padding: 2.5px 6px;
       border-radius: 2px;
       font-weight: 700;
       text-align: left;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
 
-    /* Print Styles */
+    /* Responsive Design para Pantallas Móviles, Tablets y Computadoras */
+    @media screen and (max-width: 860px) {
+      body {
+        padding: 12px 8px;
+      }
+
+      .action-bar {
+        width: 100%;
+      }
+
+      .cv-page {
+        width: 100%;
+        max-width: 650px;
+        height: auto !important;
+        max-height: none !important;
+        grid-template-columns: 1fr;
+        border-radius: 12px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+      }
+
+      .cv-sidebar {
+        border-right: none;
+        border-bottom: 2px solid rgba(0,0,0,0.15);
+        padding: 24px 20px;
+      }
+
+      .avatar-wrapper {
+        width: 110px;
+        height: 110px;
+      }
+
+      .cv-main {
+        padding: 24px 20px;
+        gap: 12px;
+      }
+
+      .skills-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media screen and (max-width: 480px) {
+      .skills-grid {
+        grid-template-columns: 1fr;
+        gap: 8px;
+      }
+
+      .competencies-box {
+        grid-template-columns: 1fr;
+      }
+
+      .btn {
+        width: 100%;
+        justify-content: center;
+      }
+    }
+
+    /* Print Styles: Imprime en A4 Exacto sin recortes */
     @media print {
       body {
         background: transparent !important;
@@ -427,10 +486,12 @@
         box-shadow: none !important;
         margin: 0 !important;
         width: 210mm !important;
-        height: 294mm !important;
-        max-height: 294mm !important;
-        page-break-after: avoid;
-        page-break-inside: avoid;
+        height: 297mm !important;
+        max-height: 297mm !important;
+        grid-template-columns: 74mm 136mm !important;
+        page-break-after: avoid !important;
+        page-break-inside: avoid !important;
+        overflow: hidden !important;
       }
 
       @page {
@@ -460,7 +521,7 @@
     </a>
   </div>
 
-  <!-- Contenedor Hoja CV Impresión Exacta y Llena sin cortes -->
+  <!-- Contenedor Hoja CV sin desbordamiento ni cortes -->
   <main class="cv-page" id="cvContent">
     <!-- COLUMNA LATERAL (Estilo exacto Google) -->
     <aside class="cv-sidebar">
@@ -532,14 +593,14 @@
       <div class="cv-sidebar-bottom">
         <div class="sidebar-section" style="margin-top: 0;">
           <h2 class="sidebar-heading">Idiomas</h2>
-          <p class="contact-list" style="font-size: 10.5px;">
-            <strong style="color: #fff; font-size: 9.5px;">Español:</strong> Lengua materna (Nativo)
+          <p class="contact-list" style="font-size: 10px;">
+            <strong style="color: #fff; font-size: 9px;">Español:</strong> Lengua materna (Nativo)
           </p>
         </div>
       </div>
     </aside>
 
-    <!-- COLUMNA PRINCIPAL (Relevancia y Atributos para Reclutadores sin cortes) -->
+    <!-- COLUMNA PRINCIPAL (2 Columnas de Skills sin recortes) -->
     <section class="cv-main">
       <!-- PERFIL PROFESIONAL -->
       <div class="section-block">
@@ -618,7 +679,7 @@
         </div>
       </div>
 
-      <!-- HABILIDADES Y OFICIOS TÉCNICOS (Calibrado para no cortarse) -->
+      <!-- HABILIDADES Y OFICIOS TÉCNICOS (2 Columnas con amplio margen: NO se corta nada) -->
       <div class="section-block">
         <h2 class="section-title">Habilidades y Oficios Técnicos</h2>
         <div class="skills-grid">
@@ -639,7 +700,7 @@
             <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 82%;"></div></div>
           </div>
           <div class="skill-item">
-            <span class="skill-name">Fontanería y redes acueducto</span>
+            <span class="skill-name">Fontanería y redes de acueducto</span>
             <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 80%;"></div></div>
           </div>
           <div class="skill-item">
